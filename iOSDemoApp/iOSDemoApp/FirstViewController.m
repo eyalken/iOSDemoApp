@@ -8,8 +8,9 @@
 
 #import "FirstViewController.h"
 
-@interface FirstViewController ()
-
+@interface FirstViewController (){
+    NSArray *HTTPLibs;
+}
 @end
 
 @implementation FirstViewController
@@ -17,7 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    HTTPLibs = @[@"AFNetworking" ,@"SDWebImage"];
+    self.httpLibPicker.dataSource=self;
+    self.httpLibPicker.delegate=self;
 }
 
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return HTTPLibs.count;
+}
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    return HTTPLibs[row];
+}
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    
+}
 
 @end
