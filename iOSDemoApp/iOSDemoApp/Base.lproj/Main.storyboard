@@ -18,55 +18,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="90.5" y="341.5" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtB-pO-SMV">
-                                <rect key="frame" x="0.0" y="94" width="375" height="196"/>
-                                <color key="backgroundColor" red="0.76765380390195959" green="0.89461245365433884" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" header="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="e2n-Ab-Q53"/>
-                                    <constraint firstAttribute="width" secondItem="KtB-pO-SMV" secondAttribute="height" multiplier="375:196" id="rBY-o6-rIx"/>
-                                </constraints>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose HTTP Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OK5-Ke-opz">
                                 <rect key="frame" x="0.0" y="45" width="375" height="28"/>
                                 <color key="backgroundColor" red="0.89169125868152999" green="0.9277354855846639" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Clr-eH-s7E"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="f1Y-Sl-bs4"/>
                                     <constraint firstAttribute="height" constant="28" id="gYO-hs-LDD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtB-pO-SMV">
+                                <rect key="frame" x="0.0" y="94" width="375" height="91"/>
+                                <color key="backgroundColor" red="0.76765380390195959" green="0.89461245365433884" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" header="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="YXv-me-1j7"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="www.huawei.com" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sao-u8-wfy">
+                                <rect key="frame" x="93" y="479" width="282" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="b7O-F4-g3L"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Write URL:   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkb-DB-mfA">
+                                <rect key="frame" x="0.0" y="479" width="88" height="21"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kky-h5-FwN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.57792789250389509" green="0.56857178368978478" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="OK5-Ke-opz" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="25" id="BVk-2K-RPs"/>
-                            <constraint firstItem="KtB-pO-SMV" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="HMG-F8-sb1"/>
-                            <constraint firstItem="OK5-Ke-opz" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="Niu-RX-8cI"/>
-                            <constraint firstItem="KtB-pO-SMV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="YiX-Q4-LhU"/>
-                            <constraint firstItem="KtB-pO-SMV" firstAttribute="top" secondItem="OK5-Ke-opz" secondAttribute="bottom" constant="21" id="ZNy-vh-9m4"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                            <constraint firstItem="OK5-Ke-opz" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="gsc-HV-R0L"/>
+                            <constraint firstItem="KtB-pO-SMV" firstAttribute="top" secondItem="OK5-Ke-opz" secondAttribute="bottom" constant="21" id="5VL-jK-zKY"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Bkb-DB-mfA" secondAttribute="bottom" constant="118" id="FNa-dq-am4"/>
+                            <constraint firstItem="Bkb-DB-mfA" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="GvW-w4-aG5"/>
+                            <constraint firstItem="sao-u8-wfy" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="I3C-nj-ZnR"/>
+                            <constraint firstItem="KtB-pO-SMV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="S7w-EV-4vV"/>
+                            <constraint firstItem="OK5-Ke-opz" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="25" id="dx3-cZ-kpx"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="sao-u8-wfy" secondAttribute="bottom" constant="118" id="fFH-EJ-HbQ"/>
+                            <constraint firstItem="OK5-Ke-opz" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="l7g-YM-j2Z"/>
+                            <constraint firstItem="sao-u8-wfy" firstAttribute="leading" secondItem="Bkb-DB-mfA" secondAttribute="trailing" constant="5" id="ns1-zA-l37"/>
+                            <constraint firstItem="KtB-pO-SMV" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="vbT-aY-joj"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="OK5-Ke-opz" secondAttribute="trailing" id="wCw-Pq-EQi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
