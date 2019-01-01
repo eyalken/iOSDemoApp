@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="91" id="YXv-me-1j7"/>
                                 </constraints>
                             </pickerView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.huawei.com/" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sao-u8-wfy">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.huawei.com/" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sao-u8-wfy">
                                 <rect key="frame" x="93" y="479" width="282" height="21"/>
                                 <color key="backgroundColor" red="0.92137205600738525" green="0.57285994291305542" blue="0.76009958982467651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
