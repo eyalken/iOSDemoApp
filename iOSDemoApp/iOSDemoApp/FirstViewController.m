@@ -39,5 +39,11 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
+- (IBAction)buttonSubmitPressed:(UIButton *)sender {
+    NSTimeInterval seconds = [[NSDate date] timeIntervalSince1970];
+   
+    
+    [self.resultLabel setText:[NSString stringWithFormat:@"%8.0f:  HTTP Status Code  is %d", seconds,200]];
+}
 
 @end
