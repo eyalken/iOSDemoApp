@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    HTTPLibs = @[@"AFNetworking" ,@"SDWebImage"];
+    HTTPLibs = @[@"AFNetworking" ,@"SDWebImage",@"NSURLConnection",@"NSURLSession",@"NKAssetDownload"];
     self.httpLibPicker.dataSource=self;
     self.httpLibPicker.delegate=self;
 }
