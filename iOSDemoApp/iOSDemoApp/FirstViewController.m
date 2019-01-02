@@ -45,5 +45,10 @@
     
     [self.resultLabel setText:[NSString stringWithFormat:@"%8.0f:  HTTP Status Code  is %d", seconds,200]];
 }
+- (IBAction)crashButtonPressed:(UIButton *)sender {
+    
+}
 
+- (IBAction)crashButton:(id)sender {
+}
 @end
