@@ -135,6 +135,7 @@
                                 <connections>
                                     <action selector="crashButton:" destination="76m-dW-enX" eventType="touchUpInside" id="0uw-d1-CMy"/>
                                     <action selector="crashButtonPressed:" destination="76m-dW-enX" eventType="touchUpInside" id="7vz-iI-YeS"/>
+                                    <action selector="crashButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="qbe-gf-YOn"/>
                                 </connections>
                             </button>
                         </subviews>

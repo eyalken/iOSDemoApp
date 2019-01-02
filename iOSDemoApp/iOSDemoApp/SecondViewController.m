@@ -7,7 +7,7 @@
 //
 
 #import "SecondViewController.h"
-
+#import "CrashTrace1.h"
 @interface SecondViewController ()
 
 @end
@@ -19,5 +19,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)crashButtonPressed:(id)sender {
+    CrashTrace1 *crashTrace1 = [[CrashTrace1 alloc]init];
+    [crashTrace1 doCrash];
+}
 
 @end
