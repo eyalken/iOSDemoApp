@@ -16,6 +16,7 @@
 		AA320BED21D4C754001A582A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA320BEC21D4C754001A582A /* main.m */; };
 		AA320BF721D4C754001A582A /* iOSDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA320BF621D4C754001A582A /* iOSDemoAppTests.m */; };
 		AA320C0221D4C754001A582A /* iOSDemoAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA320C0121D4C754001A582A /* iOSDemoAppUITests.m */; };
+		AA74444821DCA00000AB00FC /* CrashTrace1.m in Sources */ = {isa = PBXBuildFile; fileRef = AA74444621DCA00000AB00FC /* CrashTrace1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		AA320BFD21D4C754001A582A /* iOSDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA320C0121D4C754001A582A /* iOSDemoAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSDemoAppUITests.m; sourceTree = "<group>"; };
 		AA320C0321D4C754001A582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA74444621DCA00000AB00FC /* CrashTrace1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTrace1.m; sourceTree = "<group>"; };
+		AA74444721DCA00000AB00FC /* CrashTrace1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTrace1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 		AA320BD921D4C753001A582A /* iOSDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				AA74444721DCA00000AB00FC /* CrashTrace1.h */,
+				AA74444621DCA00000AB00FC /* CrashTrace1.m */,
 				AA320BDA21D4C753001A582A /* AppDelegate.h */,
 				AA320BDB21D4C753001A582A /* AppDelegate.m */,
 				AA320BDD21D4C753001A582A /* FirstViewController.h */,
@@ -270,6 +275,7 @@
 				AA320BE221D4C753001A582A /* SecondViewController.m in Sources */,
 				AA320BDC21D4C753001A582A /* AppDelegate.m in Sources */,
 				AA320BED21D4C754001A582A /* main.m in Sources */,
+				AA74444821DCA00000AB00FC /* CrashTrace1.m in Sources */,
 				AA320BDF21D4C753001A582A /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
