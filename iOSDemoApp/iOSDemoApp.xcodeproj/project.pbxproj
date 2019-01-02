@@ -107,8 +107,8 @@
 		AA320BD921D4C753001A582A /* iOSDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				AA74444721DCA00000AB00FC /* CrashTrace1.h */,
-				AA74444621DCA00000AB00FC /* CrashTrace1.m */,
+				AA74444A21DCDD9500AB00FC /* Crash */,
+				AA74444921DCD62400AB00FC /* HTTPLibs */,
 				AA320BDA21D4C753001A582A /* AppDelegate.h */,
 				AA320BDB21D4C753001A582A /* AppDelegate.m */,
 				AA320BDD21D4C753001A582A /* FirstViewController.h */,
@@ -140,6 +140,22 @@
 				AA320C0321D4C754001A582A /* Info.plist */,
 			);
 			path = iOSDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		AA74444921DCD62400AB00FC /* HTTPLibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HTTPLibs;
+			sourceTree = "<group>";
+		};
+		AA74444A21DCDD9500AB00FC /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				AA74444721DCA00000AB00FC /* CrashTrace1.h */,
+				AA74444621DCA00000AB00FC /* CrashTrace1.m */,
+			);
+			path = Crash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
