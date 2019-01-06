@@ -101,6 +101,7 @@
                     <connections>
                         <outlet property="httpLibPicker" destination="KtB-pO-SMV" id="btu-gu-Hde"/>
                         <outlet property="resultLabel" destination="rTh-Zz-Aw1" id="zxQ-IX-ReG"/>
+                        <outlet property="urlText" destination="sao-u8-wfy" id="xkK-pi-Mps"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" userLabel="Choose HTTP Library" sceneMemberID="firstResponder"/>

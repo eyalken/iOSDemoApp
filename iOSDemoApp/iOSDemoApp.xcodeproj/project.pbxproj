@@ -17,6 +17,8 @@
 		AA320BF721D4C754001A582A /* iOSDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA320BF621D4C754001A582A /* iOSDemoAppTests.m */; };
 		AA320C0221D4C754001A582A /* iOSDemoAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA320C0121D4C754001A582A /* iOSDemoAppUITests.m */; };
 		AA74444821DCA00000AB00FC /* CrashTrace1.m in Sources */ = {isa = PBXBuildFile; fileRef = AA74444621DCA00000AB00FC /* CrashTrace1.m */; };
+		AA74445121DDDDEA00AB00FC /* NSURLSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA74445021DDDDEA00AB00FC /* NSURLSessionRequest.m */; };
+		AA74445321DE0FCD00AB00FC /* IHttpLibRequestExec.m in Sources */ = {isa = PBXBuildFile; fileRef = AA74445221DE0FCD00AB00FC /* IHttpLibRequestExec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		AA320C0321D4C754001A582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA74444621DCA00000AB00FC /* CrashTrace1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTrace1.m; sourceTree = "<group>"; };
 		AA74444721DCA00000AB00FC /* CrashTrace1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTrace1.h; sourceTree = "<group>"; };
+		AA74444E21DD01B900AB00FC /* IHttpLibRequestExec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHttpLibRequestExec.h; sourceTree = "<group>"; };
+		AA74444F21DD09FD00AB00FC /* NSURLSessionRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLSessionRequest.h; sourceTree = "<group>"; };
+		AA74445021DDDDEA00AB00FC /* NSURLSessionRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionRequest.m; sourceTree = "<group>"; };
+		AA74445221DE0FCD00AB00FC /* IHttpLibRequestExec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHttpLibRequestExec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,10 @@
 		AA74444921DCD62400AB00FC /* HTTPLibs */ = {
 			isa = PBXGroup;
 			children = (
+				AA74444E21DD01B900AB00FC /* IHttpLibRequestExec.h */,
+				AA74444F21DD09FD00AB00FC /* NSURLSessionRequest.h */,
+				AA74445021DDDDEA00AB00FC /* NSURLSessionRequest.m */,
+				AA74445221DE0FCD00AB00FC /* IHttpLibRequestExec.m */,
 			);
 			path = HTTPLibs;
 			sourceTree = "<group>";
@@ -289,10 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA320BE221D4C753001A582A /* SecondViewController.m in Sources */,
+				AA74445121DDDDEA00AB00FC /* NSURLSessionRequest.m in Sources */,
 				AA320BDC21D4C753001A582A /* AppDelegate.m in Sources */,
 				AA320BED21D4C754001A582A /* main.m in Sources */,
 				AA74444821DCA00000AB00FC /* CrashTrace1.m in Sources */,
 				AA320BDF21D4C753001A582A /* FirstViewController.m in Sources */,
+				AA74445321DE0FCD00AB00FC /* IHttpLibRequestExec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = huaweiapm.iOSDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"WARNING_LDFLAGS[arch=*]" = "-v";
 			};
 			name = Debug;
 		};

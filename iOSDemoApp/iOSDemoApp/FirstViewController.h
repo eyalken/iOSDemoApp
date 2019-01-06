@@ -10,6 +10,7 @@
 
 @interface FirstViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UITextField *urlText;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *httpLibPicker;
 - (IBAction)crashButton:(id)sender;

@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+#import "HTTPLibs/IHttpLibRequestExec.h"
+#import "HTTPLibs/NSURLSessionRequest.h"
 
 @interface FirstViewController (){
     NSArray *HTTPLibs;
@@ -21,6 +23,14 @@
     HTTPLibs = @[@"AFNetworking" ,@"SDWebImage",@"NSURLConnection",@"NSURLSession",@"NKAssetDownload"];
     self.httpLibPicker.dataSource=self;
     self.httpLibPicker.delegate=self;
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://itunes.apple.com/search?term=apple&media=software"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+//        NSLog(@"%@", json);
+//    }];
+//    
+//    [dataTask resume];
+    
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -42,13 +52,15 @@
 - (IBAction)buttonSubmitPressed:(UIButton *)sender {
     NSTimeInterval seconds = [[NSDate date] timeIntervalSince1970];
    
-    
-    [self.resultLabel setText:[NSString stringWithFormat:@"%8.0f:  HTTP Status Code  is %d", seconds,200]];
-}
-- (IBAction)crashButtonPressed:(UIButton *)sender {
-    
+    NSLog(@"buttonSubmitPressed %@", [self.urlText text]);
+    IHttpLibRequestExec *request =[[NSURLSessionRequest alloc] init];
+    [self.resultLabel setText:@"Please wait executing Request"];
+    NSString * returnVal= [NSString stringWithFormat:@"%8.0f:  %@", seconds,[request executeHTTPRequest:[self.urlText text]]];
+    [self.resultLabel setText:returnVal];
 }
 
+
 - (IBAction)crashButton:(id)sender {
+      NSLog(@"crashButton %@", [self.urlText text]);
 }
 @end
